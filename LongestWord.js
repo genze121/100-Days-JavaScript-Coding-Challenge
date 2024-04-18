@@ -2,7 +2,7 @@
 //* Programming Question : Longest Word in a String
 //* ________________________________________________
 
-//? Q: Write a function findLongestWord that takes a string as input and returs the longest word int the string. If there are multiple longest words, return the first one encountered.
+//? Q: Write a function findLongestWord that takes a string as input and returns the longest word in the string. If there are multiple longest words, return the first one encountered.
 
 //* Constraints :
 //? The input string may contain alphabetic characters, digits, spaces and punctuation.
@@ -10,7 +10,7 @@
 //? The input string may contain multiple words separated by spaces.
 
 //* Note :
-//? If the input string is empty or contains only whitespae, the function should return an false.
+//? If the input string is empty or contains only whitespae, the function should return an false/Empty String.
 //? The function should ignore leading and trailing whitepace when determining the longest word.
 
 const str = "Interview preparation for faang companies";
@@ -23,7 +23,7 @@ function findLongestWord(str) {
 
   // 1st approach using sort() function.
   const finalWords = words.sort((a, b) => b.length - a.length);
-  console.log(finalWords[0]);
+  return finalWords[0];
 
   // 2nd approach using reduce() function.
   const reduceWords = words.reduce(
@@ -31,7 +31,7 @@ function findLongestWord(str) {
       word.length > accumulator.length ? word : accumulator,
     ""
   );
-  console.log(reduceWords);
+  return reduceWords;
 }
 
 console.log(findLongestWord(str));
