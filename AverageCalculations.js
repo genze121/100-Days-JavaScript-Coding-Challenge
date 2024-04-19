@@ -28,7 +28,6 @@ function calculateAverage(arr) {
 // 2nd approach using reduce() function.
 function calculateAverage(arr) {
   const total = arr.reduce((acc, sum) => acc + sum, 0);
-  console.log(total);
   return total / arr.length;
 }
 

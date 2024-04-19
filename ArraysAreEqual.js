@@ -12,10 +12,12 @@
 function arraysAreEqual(arr1, arr2) {
   if (arr1.length !== arr2.length) return false;
 
+  // Way number - 1
   if (arr1.length === arr2.length) {
     return true;
   }
 
+  // way number - 2
   return arr1.length === arr2.length;
 }
 
@@ -23,8 +25,10 @@ function arraysAreEqual(arr1, arr2) {
 function arraysAreEqual(arr1, arr2) {
   if (arr1.length !== arr2.length) return false;
 
+  // way number - 1
   return arr1.some((value, index) => value === arr2[index]);
 
+  // way number - 2
   return arr1.every((value, index) => value === arr2[index]);
 }
 

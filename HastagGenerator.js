@@ -30,7 +30,7 @@ function generateHash(name) {
   let joinWithHash = `#${capitalizewords.join("")}`;
   console.log(joinWithHash);
 
-  //2nd approach using map and replace function.
+  //2nd approach using map and replace, and charAt function.
   let capitalizedWords = words.map(
     word => word.replace(word[0], word[0].toUpperCase()) // way no - 1
     //   word.charAt(0).toUpperCase() + word.slice(1) // way no -2
