@@ -17,7 +17,7 @@ function toCamelCase(str) {
         );
       }
     })
-    .join(" ");
+    .join("");
 }
 
 function toSnakeCase(str) {
