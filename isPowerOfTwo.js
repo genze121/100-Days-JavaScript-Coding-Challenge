@@ -11,14 +11,14 @@
 //* The function should return true if the given number is a power of 2, and false otherwise.
 
 // 1st approach.
-// function isPowerOfTwo(num) {
-//   while (num != 2) {
-//     if (num % 2 != 0) return false;
-//     num = num / 2;
-//   }
+function isPowerOfTwo(num) {
+  while (num != 2) {
+    if (num % 2 != 0) return false;
+    num = num / 2;
+  }
 
-//   return true;
-// }
+  return true;
+}
 
 // 2nd approach.
 function isPowerOfTwo(num) {
