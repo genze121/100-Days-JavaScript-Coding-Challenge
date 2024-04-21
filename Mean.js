@@ -10,7 +10,7 @@
 //* The input array may contain positive and negative intgers.
 //* The input array may be empty. If it is empty, the function should return 0.
 
-// 1st way using formula.
+// 1st approach using formula.
 function calculateMean(array) {
   if (array.length === 0) return 0;
   let mean = 0;
@@ -23,6 +23,7 @@ function calculateMean(array) {
   return mean;
 }
 
+// 2nd approach using reduce function.
 function calculateMean(array) {
   if (array.length === 0) return 0;
   let mean = array.reduce((acc, frequency) => acc + frequency, 0);

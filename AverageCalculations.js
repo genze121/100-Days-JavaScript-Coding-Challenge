@@ -19,7 +19,6 @@ function calculateAverage(arr) {
     sum = sum + arr[i];
   }
 
-  console.log(sum);
   average = sum / arr.length;
 
   return average;
