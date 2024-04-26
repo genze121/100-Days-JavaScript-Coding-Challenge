@@ -30,6 +30,21 @@ function countVowels(str) {
   return counter;
 }
 
+function countVowels(str) {
+  if (str.trim().length === 0) return false;
+  str = str.toLowerCase();
+
+  const vowels = ["a", "e", "i", "o", "u"];
+  let counter = 0;
+  for (let element of str) {
+    if (vowels.includes(element)) {
+      counter++;
+    }
+  }
+
+  return counter;
+}
+
 console.log(countVowels("Helloo world"));
 console.log(countVowels("ThE quIck brOwn fOx"));
 console.log(countVowels("Brrrp"));
