@@ -8,7 +8,7 @@
 //* maxLength : An integer representing the maximum length of the string allowed.
 //* The function should truncate the input string str if its length exceeds the specified maxLength. If truncation occurs, the function should add '...' to the end of the truncated string.
 
-//! Contraints:
+//! Constraints:
 
 //? The input string str will contain only alphanumeric characters and punctuation marks.
 //? The maximum length maxLength will be a positive integer.
