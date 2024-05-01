@@ -20,6 +20,12 @@ const findMax = arr => {
   return Math.max(...arr); // spread operator to convert into number.
 };
 
+// 3rd approach using sort function
+function findMax(arr) {
+  const max = arr.sort((a, b) => a - b);
+  return max.at(-1);
+}
+
 console.log(findMax([1, 5, 3, 9, 2]));
 console.log(findMax([-10, -5, -3, -2]));
 console.log(findMax([5]));
