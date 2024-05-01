@@ -12,9 +12,9 @@
 //* You should use the provided removeDuplicates function signature without any additional parameters.
 
 // 1st approach Set()
-// function removeDuplicatesFromArray(array) {
-//   return [...new Set(array)];
-// }
+function removeDuplicatesFromArray(array) {
+  return [...new Set(array)];
+}
 
 // 2nd approach using loop --> for loop, forEach, map.
 function removeDuplicatesFromArray(array) {
