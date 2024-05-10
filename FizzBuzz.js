@@ -10,7 +10,8 @@
 //? If i is divisible by only 5, include "Buzz" in the result.
 //? Otherwise include the number itself.
 
-function fizzbuzz(startnum, endnum) {
+// 1st approach
+function fizzBuzz(startnum, endnum) {
   let arr = [];
   for (let i = startnum; i <= endnum; i++) {
     if (i % 3 == 0 && i % 5 == 0) {
@@ -27,4 +28,18 @@ function fizzbuzz(startnum, endnum) {
   return arr;
 }
 
-console.log(fizzbuzz(1, 15));
+// 2nd approach
+function fizzBuzz(start, end) {
+  let arr = [];
+  for (let i = start; i <= end; i++) {
+    arr.push(
+      i % 3 == 0 && i % 5 === 0
+        ? "FizzBuzz"
+        : i % 3 === 0 ? "Fizz" : i % 5 === 0 ? "Buzz" : i
+    );
+  }
+
+  return arr;
+}
+
+console.log(fizzBuzz(1, 15));
