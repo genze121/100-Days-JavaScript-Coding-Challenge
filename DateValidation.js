@@ -13,6 +13,7 @@
 //? 01-28 for February in common years, and 01-29 for february in leap years.
 //? Year Validation : Years should be within the range from 1990 to 2099.
 
+// Date Validation
 function isValidateDate(dateFormat) {
   const regularExpression = /^(0[1-9]|1[0-2])\/(0[1-9]|[12][0-9]|3[0-1])\/((19|20)[0-9]{2})$/;
   return regularExpression.test(dateFormat);
