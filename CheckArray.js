@@ -2,7 +2,7 @@
 //* Programming Question : Check whether it is an array or not.
 //* _________________________________________________________________
 
-//? Create a function checkArray that takes a arr as input and check the input is array or not.
+//? Create a function checkArray that takes an arr as input and check the input is array or not.
 //? If it is an array return "It is an array."
 //? If it is not an array return "It is not an array."
 
